@@ -1,0 +1,39 @@
+Resumo do dia:
+27/07/2022
+Não existe uma empresa por trás do javascript, e sim uma comissão que decide quais implementações serão criadas para a linguagem. Essa comissão se chama TC39, e qualquer pessoa pode sugerir uma implementação.
+JavaScript pode executar um código hoje que foi escrito 10 anos atras. 
+Um compilador pega o código e compila em uma versão mais antiga, para ser executado por um navegador que não suporta as versões mais recentes do código
+
+Strict mode:
+	Precisa ser declarado entre aspas, pois em um navegador antigo, não funcionaria. Em um navegador atualizado, ele identifica o contexto e transforma a string em uma operação de modo restrito. 
+	Strict Mode serve para ajudar a debugar um código existente, apontando os erros de sintaxe, ajudando a rastrear o problema. Também impede de utilizar palavras reservadas do JS. 
+	Também  não permite que deletemos variáveis e funções, e também os argumentos para funções .
+
+Parametros por valor/referencia:
+	Dentro do JS, passar tipos primitivos são feitos por valor, ja objetos, são passados por referencia.
+	Passar por valor: Se mudar o valor dentro da função, o valor não será alterado fora dela.
+	Passar por referencia: Se mudar o valor dentro da função, o valor será alterado fora dela.
+
+What is a rest operator?
+	Compila todo um conjunto em uma array, é o resto de um elemento recolhido em uma matriz
+	
+￼
+Spread operator:
+	concatena elementos de uma array em alguma outra array, pode-se injetar uma array onde quiser em outra array (meio, inicio, fim). 
+	Também é usado para copiar uma array, pois se fizer a = 1 and b = a, o b estaria apontando para o mesmo lugar que a
+Templete Strings:
+	Usar strings de varias linhas. Utilizar “``” para escrever em múltiplas linhas. É possível colocar variáveis dentro de chaves assim como Python. Na verdade, dentro da chaves, se colocam expressões . Também é possível colocar expressões dentro de expressões, assim como condições. 
+￼
+	Também é possível adicionar tags antes de uma string 
+￼
+Tags de string:
+
+	Permite, por exemplo, colocar a moeda de um pais antes do valor
+Tipos de dado:
+	Em JavaScript, temos string, Number, boolean, nulo, undefined, object. We can use the typeof function. JS é dinâmica.
+Difference between == and ===;
+	‘===‘check for the values and the type, while ‘==‘check value only.
+
+What is a NaN?:
+	NaN, do tipo number, não é realmente um numero . Função para checar se é um numero. 
+Pode retornar true caso o numero esteja entre aspas.
