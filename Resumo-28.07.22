@@ -1,0 +1,52 @@
+Resumo 28/07/22
+Variáveis e escopos:
+	Escopo é o conceito de quanto tempo uma variável tem de existência antes de “morrer”.
+	Esse conceito mudou de acordo com o tempo, alterando as regras de acordo com as mudanças no JS. ESCOPO -> lifetime. Temos vários tipos de tipos de escopo em JS, uma variável global já é um escopo. Outra variável é uma função. O escopo definido dentro de uma função, só pode ser acessado dentro do mesmo bloco. Ler and const, permite criar uma variável que pode ser acessada em um escopo filho, mas não fora de um escopo.
+Variable hoisting:
+	Js tem a capacidade de entender uma função que ainda não foi declarada no seu contexto, e só foi declarada após ser chamada. 
+Scope Chain:
+	podem se aninhar dentro de outros escopos. Vamos supor que dentro de uma função, seja pintado uma variável, mas esta variável não esta definida na função, entao, o JS ira olhar para fora do escopo, ate chegar no escopo global, procurando ela definição da variável. As variáveis são resolvidas a partir da ordem que o código esta escrito.
+IIFE:
+	
+Função de fechamento:
+	Quando uma função retorna uma função, a função retornada mantera uma referencia para qualquer variável dentro do escopo da ultima função. 
+￼
+	Podem se referir a variáveis fora do escopo, mesmo depois da função ter retornado
+
+Reestruturação:
+	 maneira de extrair valores em variáveis, objetos ou matrizes.
+
+￼
+	Const obj = {first: “asim”, last: “cas”};
+	Const {first: f, last: l} = obj
+	
+
+Different ways to make a for loop:
+	the original way: 
+		for (let I = 0; I < x: I++_){}
+	continue function means ignore the rest of the code inside a loop, and get to the beginning
+	forEach function;
+	for-in: is useful to loop inside objects properties;
+		let array = {a:1, b:2};
+		for (let prop in array){
+			console.log(prop);
+		}
+	for-in = string
+	for-of = number
+
+This keyword:
+	“this” é determinado pelo contexto da chamada, pela maneira que uma função é chamada, 
+Function call, bind and apply:
+	   Funções são na verdade objetos dentro de javascript, com argumentos, nome, parâmetros, prototypes. Conseguimos adicionar propriedades para funções. 
+	Normalmente, pode-se usar call para chamar a função, a não ser que a função tenha um numero variável de parâmetros. Quando os parâmetros estão dentro de um array, pode-se utilizar a função apply, que ira passar os valores separadamente. 
+Fat arrow:
+	another way to create a ghost function in JS. é possível armazenar uma função em uma variável com o fato Arrow. 
+	let add = (a,b) => a + b
+
+
+
+OBJECT ORIENTATION:
+	Em JS, OO é diferente do que em qualquer outra linguagem.
+Prototype chain:
+	Se eu pedir um atributo de um objeto e o Js não encontrar esse atributo no objeto, ele vai procurar esse atributo no prototype, apontando para outro objeto, que seria um objeto pai. é necessário que estes objetos sejam linkados anteriormente. é possível checar se um objeto é prototype de outros objetos. Os prototypes também são dinâmicos, podendo ser alterados 
+	
